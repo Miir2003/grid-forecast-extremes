@@ -1,9 +1,9 @@
 # Grid forecasts under extreme weather
 
-**Research question.** How much does using *observed* weather, instead of the
-weather forecasts actually available a day ahead, overstate day-ahead
+**Research question.** How much does using observed weather, instead of the
+weather forecasts actually available a day ahead, overstate day ahead
 electricity demand forecast accuracy? Is the overstatement larger on
-extreme-temperature days, when accuracy matters most?
+extreme temperature days, when accuracy matters most?
 
 Hypotheses, design choices and their reasons are in [DECISIONS.md](DECISIONS.md).
 
