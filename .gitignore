@@ -1,0 +1,15 @@
+# Data is downloaded by scripts, never committed
+data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets and local settings
+.env
+
+# OS
+.DS_Store

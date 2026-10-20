@@ -1,0 +1,10 @@
+ba,hours_expected,pct_rows_missing,n_duplicate_hours,pct_demand_missing,pct_demand_eia_imputed,n_adjusted_unexplained,pct_forecast_missing,max_forecast_gap_hours,pct_nonpositive,pct_ratio_implausible,median_bias_pct,operator_mape_pct,gate_forecast_missing,gate_imputed,gate_ratio,gate_gap,gate_bias,passes
+BPAT,48216.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.002,0.205,1.991,True,True,True,True,True,True
+CISO,48216.000,0.000,0.000,0.050,0.232,0.000,0.249,49.000,0.000,0.002,-2.500,5.930,True,True,True,True,True,True
+ERCO,48216.000,0.000,0.000,0.050,0.050,0.000,0.100,48.000,0.000,0.000,0.249,2.381,True,True,True,True,True,True
+ISNE,48216.000,0.000,0.000,0.000,0.006,0.000,0.000,0.000,0.000,0.000,-0.888,2.594,True,True,True,True,True,True
+MISO,48216.000,0.000,0.000,0.000,0.137,0.000,0.149,24.000,0.000,0.000,2.315,2.689,True,True,True,True,True,True
+NYIS,48216.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.261,0.000,-2.222,2.633,True,True,True,True,True,True
+PJM,48216.000,0.000,0.000,0.006,0.295,0.000,0.299,25.000,0.000,0.000,-1.466,3.574,True,True,True,True,True,True
+SWPP,48216.000,0.000,0.000,0.000,0.054,0.000,1.095,384.000,0.000,0.052,2.404,5.006,True,True,True,False,True,False
+TVA,48216.000,0.000,0.000,0.000,0.017,0.000,0.044,21.000,0.000,0.002,0.678,2.284,True,True,True,True,True,True

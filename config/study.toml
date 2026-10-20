@@ -1,0 +1,30 @@
+# Single source of truth for study settings. Code reads this file;
+# nothing below should be hard-coded elsewhere. See DECISIONS.md for the why.
+
+[regions]
+# EIA-930 balancing-authority codes
+primary = ["ERCO", "PJM", "MISO", "CISO", "ISNE", "SWPP", "TVA", "BPAT"]
+backup = ["NYIS"]  # replaces any primary region that fails the quality gates
+# Regions used in the study after applying the quality gates (D13):
+# SWPP failed the forecast-gap gate and NYIS replaced it.
+final = ["BPAT", "CISO", "ERCO", "ISNE", "MISO", "NYIS", "PJM", "TVA"]
+
+[eia930]
+# Six-month bulk files to download, inclusive. 2020 H2 gives lag history
+# before the study window starts.
+first_file = [2020, "Jul_Dec"]
+last_file = [2026, "Jul_Dec"]
+
+[study_window]
+# Hour-ending timestamps in UTC. Archived GFS day-ahead temperature forecasts
+# begin 2021-03-24 (1-day lead) and 2021-03-25 (2-day lead); see D12.
+start_utc = "2021-04-01 01:00"
+end_utc = "2026-10-01 00:00"
+
+[quality_gates]
+# Fixed BEFORE looking at the results (D10 in DECISIONS.md).
+max_pct_forecast_missing = 5.0
+max_pct_demand_eia_imputed = 2.0
+max_pct_ratio_implausible = 0.5
+max_forecast_gap_hours = 168
+max_abs_median_bias_pct = 25.0
